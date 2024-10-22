@@ -1,8 +1,8 @@
 // src/routes/+page.server.ts
 import {
-    fetchPopularShows,
-    fetchTrendingShows,
-    fetchTopRatedShows,
+    fetchPopularMovies,
+    fetchTrendingMovies,
+    fetchTopRatedMovies,
     getTMDBConfig,
     getGenres,
     getMoviesByGenre,
@@ -17,9 +17,9 @@ export const load: PageServerLoad = async ({ fetch }) => {
         // Fetch initial data concurrently
         const [configResponse, popularResponse, trendingResponse, topRatedResponse, genresResponse] = await Promise.all([
             getTMDBConfig(fetch),
-            fetchPopularShows(fetch),
-            fetchTrendingShows(fetch),
-            fetchTopRatedShows(fetch),
+            fetchPopularMovies(fetch),
+            fetchTrendingMovies(fetch),
+            fetchTopRatedMovies(fetch),
             getGenres(fetch),
         ]);
 
