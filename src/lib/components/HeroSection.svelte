@@ -41,7 +41,7 @@
       unsubscribeShows = selectedMovie.subscribe(async(data) => {
         
          movie = data
-         trailerUrl= await fetchTrailer(movie.id)
+         trailerUrl= await fetchTrailer(movie?.id)
       });
   
 
