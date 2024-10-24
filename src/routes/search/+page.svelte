@@ -1,9 +1,6 @@
 <!-- src/routes/search/+page.svelte -->
 <script lang="ts">
-    import {  onDestroy } from 'svelte';
-    import { page } from '$app/stores';
-    import { searchMovies } from '$lib/api/API'
-    import { derived } from 'svelte/store';
+
   import Card from '$lib/components/Card.svelte';
 
 

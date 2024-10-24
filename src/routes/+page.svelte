@@ -12,10 +12,10 @@
       selectedMovie,
       selectedMovieTrailer
   } from "$lib/store/GlobalState";
-  import type { Movie, MovieWithGenere } from "$lib/types/types";
+  import type { Movie, MovieWithGenere, TMDBConfig } from "$lib/types/types";
 
   export let data: {
-      config: any;
+      config: TMDBConfig;
       popularShows: Movie[];
       trendingShows: Movie[];
       topRatedShows: Movie[];

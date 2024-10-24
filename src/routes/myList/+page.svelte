@@ -4,7 +4,7 @@
   import Card from "$lib/components/Card.svelte";
   import { browser } from "$app/environment";
   import { favoriteListRefresh } from "$lib/store/GlobalState";
-  import type { Movie } from "$lib/types/typess";
+  import type { Movie } from "$lib/types/types";
 
   let movies: Movie[] = [];
 

@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="bg-[#181818] text-white rounded-lg shadow-md sm:w-44 w-52">
+<div class="bg-[#181818] text-white rounded-lg shadow-md sm:w-48 w-40">
   <div class="relative">
     <img
       on:error={handleNoImageError}
